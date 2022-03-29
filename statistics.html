@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#05042c" />
+    <meta data-react-helmet="true" name="twitter:image" content="https://nftkey.app/static/social-share-3057d971a324722eb79c57a34c054eb6.png" />
+    <meta data-react-helmet="true" name="twitter:site" content="@nftkey" />
+    <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+    <meta data-react-helmet="true" property="og:image" content="https://nftkey.app/static/social-share-3057d971a324722eb79c57a34c054eb6.png" />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta data-react-helmet="true" property="og:description" content="NFTKEY is where you unlock quick and easy access to digital collectibles. Browse, buy and sell popular collections of NFTs from many different blockchains and artists." />
+    <meta data-react-helmet="true" property="og:title" content="Statistics - NFTKEY" />
+    <meta data-react-helmet="true" name="description" content="NFTKEY is where you unlock quick and easy access to digital collectibles. Browse, buy and sell popular collections of NFTs from many different blockchains and artists." />
+    <meta name="generator" content="Gatsby 4.9.3" />
+    <title data-react-helmet="true">Statistics - NFTKEY</title>
+    <script data-react-helmet="true" type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "url": "https://nftkey.app",
+            "logo": "data:image/png;base64,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"
+        }
+    </script>
+    <link rel="icon" href="/favicon-32x32.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" type="image/png" />
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=2fc77898ace59ed67c2f0d8bc51bfc8c" />
+    <link rel="canonical" href="https://nftkey.app/statistics/" data-baseprotocol="https:" data-basehost="nftkey.app" />
+    <link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml" />
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({});
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MV9BNXQ');
+    </script>
+    <link as="script" rel="preload" href="/webpack-runtime-6a807d601e79ef9f4aff.js" />
+    <link as="script" rel="preload" href="/framework-5d094cf67ea6dc49ad86.js" />
+    <link as="script" rel="preload" href="/061e6b60-69533f80746947b5fe53.js" />
+    <link as="script" rel="preload" href="/91472edf-d576e703d0b443ef7c1a.js" />
+    <link as="script" rel="preload" href="/app-83c56e29571d325033a7.js" />
+    <link as="script" rel="preload" href="/fb7d5399-455fab2db7c5a9452037.js" />
+    <link as="script" rel="preload" href="/commons-ebf92be8b12e01a99bf7.js" />
+    <link as="script" rel="preload" href="/c85620b8327c3b0a8f01032ffdc1ff70b7dbf624-583759bc645a696d64fb.js" />
+    <link as="script" rel="preload" href="/component---src-pages-statistics-tsx-996dcf5282c16bb567eb.js" />
+    <link as="fetch" rel="preload" href="/page-data/statistics/page-data.json" crossorigin="anonymous" />
+    <link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous" />
+    <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" />
+</head>
+
+<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV9BNXQ" height="0" width="0" style="display: none; visibility: hidden" aria-hidden="true"></iframe></noscript>
+    <div id="___gatsby">
+        <style data-emotion="css-global uzpecd">
+            html,
+            body,
+            div,
+            article,
+            aside,
+            details,
+            footer,
+            header,
+            section,
+            applet,
+            iframe,
+            embed,
+            object,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            hgroup,
+            blockquote,
+            p,
+            pre,
+            span,
+            a,
+            abbr,
+            acronym,
+            address,
+            big,
+            cite,
+            code,
+            del,
+            dfn,
+            ins,
+            kbd,
+            q,
+            ruby,
+            s,
+            samp,
+            small,
+            strike,
+            sub,
+            sup,
+            tt,
+            var,
+            b,
+            u,
+            i,
+            center,
+            dl,
+            dt,
+            dd,
+            ol,
+            ul,
+            li,
+            label,
+            legend,
+            fieldset,
+            form,
+            table,
+            caption,
+            tbody,
+            tfoot,
+            thead,
+            tr,
+            th,
+            td,
+            img,
+            figure,
+            figcaption,
+            menu,
+            nav,
+            output,
+            summary,
+            time,
+            mark,
+            canvas,
+            audio,
+            video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            
+            html {
+                font-family: Roboto, 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif, Noto Sans SC!important;
+                box-sizing: border-box;
+                min-height: 100vh;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            
+            body {
+                font-family: Roboto, 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif, Noto Sans SC;
+                color: #05042c;
+                background: #F3F5FB;
+                font-size: 16px;
+                line-height: 1.5;
+                position: relative;
+                -webkit-font-smoothing: antialiased;
+            }
+            
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            hgroup,
+            menu,
+            nav,
+            section {
+                display: block;
+            }
+            
+            a {
+                color: #05042c;
+                -webkit-text-decoration: none;
+                text-decoration: none;
+            }
+            
+            blockquote,
+            p {
+                quotes: none;
+            }
+            
+            blockquote::before,
+            blockquote::after,
+            q::before,
+            q::after {
+                content: "";
+            }
+            
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            
+            *,
+            *::before,
+            *::after {
+                font-family: inherit;
+                box-sizing: inherit;
+                -webkit-transition: background-color 0.2s linear;
+                transition: background-color 0.2s linear;
+            }
+            
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+                font-family: Roboto, 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif, Noto Sans SC;
+            }
+            
+            input {
+                margin: 0;
+            }
+            
+            input::-ms-clear {
+                display: none;
+                width: 0;
+                height: 0;
+            }
+            
+            input::-webkit-clear-button {
+                -webkit-appearance: none;
+                display: none;
+                width: 0;
+                height: 0;
+            }
+            
+            input::-webkit-search-cancel-button {
+                display: none;
+                width: 0;
+                height: 0;
+            }
+            
+            hr {
+                display: block;
+                height: 1px;
+                border: 0;
+                border-top: 1px solid #dadde2;
+                margin: 20px 0;
+                padding: 0;
+            }
+            
+            audio,
+            canvas,
+            iframe,
+            img,
+            svg,
+            video {
+                vertical-align: middle;
+            }
+            
+            fieldset {
+                border: 0;
+                margin: 0;
+                padding: 0;
+            }
+            
+            textarea {
+                resize: vertical;
+            }
+            
+            @media print {
+                *,
+                *::before,
+                *::after {
+                    background: transparent!important;
+                    color: #000!important;
+                    box-shadow: none!important;
+                    text-shadow: none!important;
+                }
+                a,
+                a:visited {
+                    -webkit-text-decoration: underline;
+                    text-decoration: underline;
+                }
+                a[href]::after {
+                    content: (' attr(href) ');
+                }
+                abbr[title]::after {
+                    content: (' attr(title) ');
+                }
+                a[href^='#']::after,
+                a[href^='javascript:']::after {
+                    content: "";
+                }
+                pre,
+                blockquote {
+                    border: 1px solid #999;
+                    page-break-inside: avoid;
+                }
+                thead {
+                    display: table-header-group;
+                }
+                tr,
+                img {
+                    page-break-inside: avoid;
+                }
+                img {
+                    max-width: 100%!important;
+                }
+                p,
+                h2,
+                h3 {
+                    orphans: 3;
+                    widows: 3;
+                }
+                h2,
+                h3 {
+                    page-break-after: avoid;
+                }
+            }
+        </style>
+        <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+            <style data-emotion="css 14sdrzj">
+                .css-14sdrzj {
+                    width: 100vw;
+                    height: 70px;
+                    background-color: #E3E6EE;
+                }
+                
+                @media (min-width: 768px) {
+                    .css-14sdrzj {
+                        height: 80px;
+                    }
+                }
+            </style>
+            <header class="css-14sdrzj">
+                <style data-emotion="css 1ngrrtj">
+                    .css-1ngrrtj {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        height: 100%;
+                    }
+                    
+                    @media (max-width: 767px) {
+                        .css-1ngrrtj {
+                            margin-left: 15px;
+                            margin-right: 15px;
+                        }
+                    }
+                </style>
+                <style data-emotion="css edi06w">
+                    .css-edi06w {
+                        position: relative;
+                        margin: 0 20px;
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-box-pack: justify;
+                        -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        height: 100%;
+                    }
+                    
+                    @media (min-width: 1025px) {
+                        .css-edi06w {
+                            max-width: 1250px;
+                            margin: 0 50px;
+                        }
+                    }
+                    
+                    @media (min-width: 1350px) {
+                        .css-edi06w {
+                            max-width: 1250px;
+                            margin: 0 auto;
+                        }
+                    }
+                    
+                    @media (max-width: 767px) {
+                        .css-edi06w {
+                            margin-left: 15px;
+                            margin-right: 15px;
+                        }
+                    }
+                </style>
+                <div class="css-edi06w">
+                    <a data-event-category="Site - Header" data-event-action="Click - Logo" data-event-label="Logo" href="/"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiByeD0iMjAiIGZpbGw9ImJsYWNrIi8+CjxlbGxpcHNlIGN4PSIyMCIgY3k9IjE1LjgiIHJ4PSI4IiByeT0iOCIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDIwIDE1LjgpIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIyMC4wNDk4IiBjeT0iMTUuNzUiIHI9IjMuMjUiIHRyYW5zZm9ybT0icm90YXRlKC05MCAyMC4wNDk4IDE1Ljc1KSIgZmlsbD0iYmxhY2siLz4KPHJlY3QgeD0iMjIuOTAwNCIgeT0iMjMuMiIgd2lkdGg9IjkiIGhlaWdodD0iNS44IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCAyMi45MDA0IDIzLjIpIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
+                            alt="NFTKEY" /></a>
+                    <style data-emotion="css 70qvj9">
+                        .css-70qvj9 {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                        }
+                    </style>
+                    <div class="css-70qvj9">
+                        <style data-emotion="css 1nka1a3">
+                            .css-1nka1a3 {
+                                -webkit-flex-shrink: 0;
+                                -ms-flex-negative: 0;
+                                flex-shrink: 0;
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                width: 40px;
+                                height: 40px;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                            }
+                        </style>
+                        <style data-emotion="css var4rp">
+                            .css-var4rp {
+                                cursor: pointer;
+                                -webkit-tap-highlight-color: transparent;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                -webkit-flex-shrink: 0;
+                                -ms-flex-negative: 0;
+                                flex-shrink: 0;
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                width: 40px;
+                                height: 40px;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                            }
+                            
+                            .css-var4rp:focus {
+                                outline: 0;
+                                box-shadow: 0;
+                            }
+                            
+                            .css-var4rp:active {
+                                outline: 0;
+                            }
+                            
+                            .css-var4rp>* {
+                                pointer-event: none;
+                            }
+                        </style>
+                        <div role="button" tabindex="0" aria-label="Price history" class="css-var4rp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Price history" /></div>
+                        <style data-emotion="css 1jolvko">
+                            .css-1jolvko {
+                                margin-top: 0;
+                                margin-right: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                            }
+                            
+                            @media (max-width: 767px) {
+                                .css-1jolvko {
+                                    margin-top: 0;
+                                    margin-right: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 15px;
+                                }
+                            }
+                            
+                            @media (min-width: 768px) {
+                                .css-1jolvko {
+                                    margin-top: 0;
+                                    margin-right: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 20px;
+                                }
+                            }
+                        </style>
+                        <div class="css-1jolvko">
+                            <div role="button" tabindex="0" aria-label="Collections" class="css-var4rp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Collections" /></div>
+                        </div>
+                        <style data-emotion="css 1qow0a7">
+                            .css-1qow0a7 {
+                                display: inline-block;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                height: 100%;
+                                width: 40px;
+                                margin: 0 10px;
+                            }
+                        </style>
+                        <div class="css-1qow0a7">
+                            <style data-emotion="css 4uzt2y animation-9rn6hv animation-9rn6hv animation-9rn6hv animation-9rn6hv">
+                                .css-4uzt2y {
+                                    background-color: #888888;
+                                    width: 5px;
+                                    height: 15px;
+                                    margin: 0 2.5px;
+                                    border-radius: 10px;
+                                    -webkit-animation-fill-mode: both;
+                                    animation-fill-mode: both;
+                                    display: inline-block;
+                                }
+                                
+                                .css-4uzt2y:nth-of-type(1) {
+                                    -webkit-animation: animation-9rn6hv 1s -0.3s infinite ease-in-out;
+                                    animation: animation-9rn6hv 1s -0.3s infinite ease-in-out;
+                                }
+                                
+                                .css-4uzt2y:nth-of-type(2) {
+                                    -webkit-animation: animation-9rn6hv 1s -0.2s infinite ease-in-out;
+                                    animation: animation-9rn6hv 1s -0.2s infinite ease-in-out;
+                                }
+                                
+                                .css-4uzt2y:nth-of-type(3) {
+                                    -webkit-animation: animation-9rn6hv 1s -0.1s infinite ease-in-out;
+                                    animation: animation-9rn6hv 1s -0.1s infinite ease-in-out;
+                                }
+                                
+                                .css-4uzt2y:nth-of-type(4) {
+                                    -webkit-animation: animation-9rn6hv 1s 0s infinite ease-in-out;
+                                    animation: animation-9rn6hv 1s 0s infinite ease-in-out;
+                                }
+                                
+                                @-webkit-keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                                
+                                @keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                                
+                                @-webkit-keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                                
+                                @keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                                
+                                @-webkit-keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                                
+                                @keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                                
+                                @-webkit-keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                                
+                                @keyframes animation-9rn6hv {
+                                    0% {
+                                        height: 8px;
+                                    }
+                                    50% {
+                                        height: 16px;
+                                    }
+                                    100% {
+                                        height: 8px;
+                                    }
+                                }
+                            </style>
+                            <div class="css-4uzt2y"></div>
+                            <div class="css-4uzt2y"></div>
+                            <div class="css-4uzt2y"></div>
+                            <div class="css-4uzt2y"></div>
+                        </div>
+                        <style data-emotion="css h2etgv">
+                            .css-h2etgv {
+                                -webkit-flex-shrink: 0;
+                                -ms-flex-negative: 0;
+                                flex-shrink: 0;
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                width: 40px;
+                                height: 40px;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                                margin-left: 20px;
+                            }
+                            
+                            .css-h2etgv img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                            
+                            @media (max-width: 767px) {
+                                .css-h2etgv {
+                                    margin-left: 15px;
+                                }
+                            }
+                            
+                            @media (max-width: 320px) {
+                                .css-h2etgv {
+                                    display: none;
+                                }
+                            }
+                        </style>
+                        <style data-emotion="css 88h745">
+                            .css-88h745 {
+                                cursor: pointer;
+                                -webkit-tap-highlight-color: transparent;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                user-select: none;
+                                -webkit-flex-shrink: 0;
+                                -ms-flex-negative: 0;
+                                flex-shrink: 0;
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                width: 40px;
+                                height: 40px;
+                                background-color: #ffffff;
+                                border-radius: 50%;
+                                margin-left: 20px;
+                            }
+                            
+                            .css-88h745:focus {
+                                outline: 0;
+                                box-shadow: 0;
+                            }
+                            
+                            .css-88h745:active {
+                                outline: 0;
+                            }
+                            
+                            .css-88h745>* {
+                                pointer-event: none;
+                            }
+                            
+                            .css-88h745 img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                            
+                            @media (max-width: 767px) {
+                                .css-88h745 {
+                                    margin-left: 15px;
+                                }
+                            }
+                            
+                            @media (max-width: 320px) {
+                                .css-88h745 {
+                                    display: none;
+                                }
+                            }
+                        </style>
+                        <div role="button" tabindex="0" aria-label="Dark mode" class="css-88h745"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Moon" /></div>
+                    </div>
+                </div>
+            </header>
+            <style data-emotion="css 1ld8jvm">
+                .css-1ld8jvm {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    height: 50px;
+                    background: #ffffff;
+                }
+                
+                @media (min-width: 768px) {
+                    .css-1ld8jvm {
+                        height: 60px;
+                    }
+                }
+            </style>
+            <nav class="css-1ld8jvm">
+                <style data-emotion="css 1tcni3z">
+                    .css-1tcni3z {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        height: 100%;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .css-1tcni3z {
+                            font-size: 18px;
+                            margin-left: 50px;
+                            margin-right: 50px;
+                        }
+                    }
+                </style><a title="Collections" class="css-1tcni3z" data-event-category="Site - Navigate" data-event-action="Click - Navigation" data-event-label="Collections" href="/">Collections</a><a title="Artists" class="css-1tcni3z" data-event-category="Site - Navigate"
+                    data-event-action="Click - Navigation" data-event-label="Artists" href="/artists">Artists</a><a title="Teams" class="css-1tcni3z" data-event-category="Site - Navigate" data-event-action="Click - Navigation" data-event-label="Teams" href="/teams">Teams</a>
+                <style data-emotion="css 5bpmbs">
+                    .css-5bpmbs {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        -webkit-align-items: center;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        height: 100%;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        font-weight: 700;
+                        box-shadow: inset 0 -5px 0 #05042c;
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .css-5bpmbs {
+                            font-size: 18px;
+                            margin-left: 50px;
+                            margin-right: 50px;
+                        }
+                    }
+                </style>
+                <div title="Statistics" class="css-5bpmbs">Statistics</div>
+            </nav>
+            <style data-emotion="css rb6vmx">
+                .css-rb6vmx {
+                    position: relative;
+                    min-height: calc(100vh - 130px);
+                    padding-top: 30px;
+                    padding-bottom: 100px;
+                }
+                
+                @media (min-width: 768px) {
+                    .css-rb6vmx {
+                        padding-top: 45px;
+                        padding-bottom: 160px;
+                    }
+                }
+            </style>
+            <main class="css-rb6vmx">
+                <style data-emotion="css dcditu">
+                    .css-dcditu {
+                        position: absolute;
+                        top: 200vh;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                    }
+                </style>
+                <div class="css-dcditu"></div>
+            </main>
+            <style data-emotion="css 13wkzee">
+                .css-13wkzee {
+                    color: #E3E6EE;
+                    background-color: #05042c;
+                    padding-top: 45px;
+                    padding-bottom: 45px;
+                }
+            </style>
+            <footer class="css-13wkzee">
+                <style data-emotion="css 5z5mon">
+                    @media (min-width: 768px) {
+                        .css-5z5mon {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                            -webkit-justify-content: space-between;
+                            justify-content: space-between;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                        }
+                    }
+                </style>
+                <style data-emotion="css qydu2b">
+                    .css-qydu2b {
+                        position: relative;
+                        margin: 0 20px;
+                    }
+                    
+                    @media (min-width: 1025px) {
+                        .css-qydu2b {
+                            max-width: 1250px;
+                            margin: 0 50px;
+                        }
+                    }
+                    
+                    @media (min-width: 1350px) {
+                        .css-qydu2b {
+                            max-width: 1250px;
+                            margin: 0 auto;
+                        }
+                    }
+                    
+                    @media (min-width: 768px) {
+                        .css-qydu2b {
+                            display: -webkit-box;
+                            display: -webkit-flex;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                            -webkit-justify-content: space-between;
+                            justify-content: space-between;
+                            -webkit-align-items: center;
+                            -webkit-box-align: center;
+                            -ms-flex-align: center;
+                            align-items: center;
+                        }
+                    }
+                </style>
+                <div class="css-qydu2b">
+                    <style data-emotion="css 1igb3xy">
+                        @media (max-width: 767px) {
+                            .css-1igb3xy {
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+                                margin-bottom: 30px;
+                            }
+                        }
+                    </style>
+                    <div class="css-1igb3xy">
+                        <style data-emotion="css j5b9iu">
+                            .css-j5b9iu {
+                                margin-right: 15px;
+                            }
+                        </style><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Logo" class="css-j5b9iu" />NFTKEY ©
+                        <!-- -->2022</div>
+                    <style data-emotion="css 1sinacs">
+                        @media (max-width: 1024px) {
+                            .css-1sinacs {
+                                display: none;
+                            }
+                        }
+                    </style>
+                    <div class="css-1sinacs">
+                        <style data-emotion="css vave9q">
+                            .css-vave9q {
+                                color: #E3E6EE;
+                            }
+                        </style><a class="css-vave9q" data-event-category="Site - Footer" data-event-action="Click - Marketplace" data-event-label="Marketplace" href="/marketplace-contracts/">Your Decentralised NFT Marketplace</a></div>
+                    <style data-emotion="css 1lkd40f">
+                        @media (max-width: 767px) {
+                            .css-1lkd40f {
+                                display: -webkit-box;
+                                display: -webkit-flex;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-align-items: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                -webkit-justify-content: center;
+                                justify-content: center;
+                            }
+                        }
+                    </style>
+                    <div class="css-1lkd40f">
+                        <style data-emotion="css b3apud">
+                            .css-b3apud {
+                                margin-left: 40px;
+                            }
+                            
+                            .css-b3apud:first-of-type {
+                                margin-left: 0;
+                            }
+                        </style>
+                        <a href="https://medium.com/" target="_blank" rel="noopener noreferrer" class="css-b3apud" data-event-category="Site - Footer" data-event-action="Click - Medium" data-event-label="Medium"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Medium" /></a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="css-b3apud" data-event-category="Site - Footer" data-event-action="Click - Twitter" data-event-label="Twitter"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Twitter" /></a>
+                        <a href="https://discord.gg/" target="_blank" rel="noopener noreferrer" class="css-b3apud" data-event-category="Site - Footer" data-event-action="Click - Discord" data-event-label="Discord"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Discord" /></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
+    </div>
+    <script id="gatsby-script-loader">
+        /*<![CDATA[*/
+        window.pagePath = "/statistics/";
+        window.___webpackCompilationHash = "94dc7a10ee2e0b7b4850"; /*]]>*/
+    </script>
+    <script id="gatsby-chunk-mapping">
+        /*<![CDATA[*/
+        window.___chunkMapping = {
+            "polyfill": ["/polyfill-fbb73ab01a135808b7bd.js"],
+            "app": ["/app-83c56e29571d325033a7.js"],
+            "component---src-pages-404-tsx": ["/component---src-pages-404-tsx-c74ece0d02ae09ee3bdc.js"],
+            "component---src-pages-address-tsx": ["/component---src-pages-address-tsx-1100720a258b5439a866.js"],
+            "component---src-pages-admin-add-collection-tsx": ["/component---src-pages-admin-add-collection-tsx-19f120aa1e76f7168736.js"],
+            "component---src-pages-admin-check-collection-tsx": ["/component---src-pages-admin-check-collection-tsx-5c913a419ac92d93972a.js"],
+            "component---src-pages-artists-tsx": ["/component---src-pages-artists-tsx-6699b4bd2cbee19208fe.js"],
+            "component---src-pages-collection-tsx": ["/component---src-pages-collection-tsx-c7690086aab380cbd88b.js"],
+            "component---src-pages-collections-hidden-index-tsx": ["/component---src-pages-collections-hidden-index-tsx-2b496b8197f6407c51b4.js"],
+            "component---src-pages-collections-hidden-token-details-tsx": ["/component---src-pages-collections-hidden-token-details-tsx-95098de6f29ef3f09a62.js"],
+            "component---src-pages-collections-life-bsc-bio-player-tsx": ["/component---src-pages-collections-life-bsc-bio-player-tsx-df1d85afd9b3ad243653.js"],
+            "component---src-pages-collections-life-bsc-index-tsx": ["/component---src-pages-collections-life-bsc-index-tsx-51a524aaf5b52f96d60b.js"],
+            "component---src-pages-collections-life-bsc-token-details-tsx": ["/component---src-pages-collections-life-bsc-token-details-tsx-1127eb8b47fe5e5967a0.js"],
+            "component---src-pages-collections-life-design-lab-tsx": ["/component---src-pages-collections-life-design-lab-tsx-57a4d181e5fc31158b38.js"],
+            "component---src-pages-collections-life-eth-bio-player-tsx": ["/component---src-pages-collections-life-eth-bio-player-tsx-87c5c47889e52935b0dd.js"],
+            "component---src-pages-collections-life-eth-index-tsx": ["/component---src-pages-collections-life-eth-index-tsx-332df5024f2986333295.js"],
+            "component---src-pages-collections-life-eth-token-details-tsx": ["/component---src-pages-collections-life-eth-token-details-tsx-2a6bd979b4e7b6f746b3.js"],
+            "component---src-pages-collections-life-start-tsx": ["/component---src-pages-collections-life-start-tsx-289d6d4bb41db4c0e83f.js"],
+            "component---src-pages-debug-tsx": ["/component---src-pages-debug-tsx-a70811524298a3575d84.js"],
+            "component---src-pages-goal-dashboard-tsx": ["/component---src-pages-goal-dashboard-tsx-926567cbac782bfbf1d7.js"],
+            "component---src-pages-index-tsx": ["/component---src-pages-index-tsx-937680690353874c6e3e.js"],
+            "component---src-pages-marketplace-contracts-tsx": ["/component---src-pages-marketplace-contracts-tsx-0cc4ca7893983c3f0da1.js"],
+            "component---src-pages-my-nfts-tsx": ["/component---src-pages-my-nfts-tsx-f888f63d34f116683df3.js"],
+            "component---src-pages-progress-tsx": ["/component---src-pages-progress-tsx-f8ac4caa86408bc6eed6.js"],
+            "component---src-pages-set-royalty-tsx": ["/component---src-pages-set-royalty-tsx-333f9128c4022460b2da.js"],
+            "component---src-pages-spunks-index-tsx": ["/component---src-pages-spunks-index-tsx-4d2320a90130d25ed1ad.js"],
+            "component---src-pages-spunks-prereveal-shareable-images-tsx": ["/component---src-pages-spunks-prereveal-shareable-images-tsx-55380657a7d4d843df7b.js"],
+            "component---src-pages-spunks-provenance-tsx": ["/component---src-pages-spunks-provenance-tsx-fbff502831ac4ac4143c.js"],
+            "component---src-pages-statistics-tsx": ["/component---src-pages-statistics-tsx-996dcf5282c16bb567eb.js"],
+            "component---src-pages-teams-tsx": ["/component---src-pages-teams-tsx-ce5f0bcf09a14f930b53.js"],
+            "component---src-pages-token-details-tsx": ["/component---src-pages-token-details-tsx-c698c6c7e7f5d589ec81.js"],
+            "component---src-templates-artist-tsx": ["/component---src-templates-artist-tsx-d3059f9c75f57621481d.js"],
+            "component---src-templates-chain-projects-tsx": ["/component---src-templates-chain-projects-tsx-c1d778c19656ff5d7936.js"],
+            "component---src-templates-marketplace-tsx": ["/component---src-templates-marketplace-tsx-0308ea2a90588062ab01.js"],
+            "component---src-templates-team-tsx": ["/component---src-templates-team-tsx-8d545e29c081f1f5955b.js"],
+            "component---src-templates-token-details-tsx": ["/component---src-templates-token-details-tsx-b9ee0271a0a7c4cac10e.js"]
+        }; /*]]>*/
+    </script>
+    <script src="/polyfill-fbb73ab01a135808b7bd.js" nomodule=""></script>
+    <script src="/component---src-pages-statistics-tsx-996dcf5282c16bb567eb.js" async=""></script>
+    <script src="/c85620b8327c3b0a8f01032ffdc1ff70b7dbf624-583759bc645a696d64fb.js" async=""></script>
+    <script src="/commons-ebf92be8b12e01a99bf7.js" async=""></script>
+    <script src="/fb7d5399-455fab2db7c5a9452037.js" async=""></script>
+    <script src="/app-83c56e29571d325033a7.js" async=""></script>
+    <script src="/91472edf-d576e703d0b443ef7c1a.js" async=""></script>
+    <script src="/061e6b60-69533f80746947b5fe53.js" async=""></script>
+    <script src="/framework-5d094cf67ea6dc49ad86.js" async=""></script>
+    <script src="/webpack-runtime-6a807d601e79ef9f4aff.js" async=""></script>
+</body>
+
+</html>
